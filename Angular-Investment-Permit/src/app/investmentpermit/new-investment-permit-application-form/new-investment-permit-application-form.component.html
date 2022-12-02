@@ -1,0 +1,242 @@
+
+<mat-card class="p-3 ml-5 mr-5 mb-5 mt-3 green-top-border">
+
+    <!--start of the form-->
+    <form fxLayout="column" [formGroup]="investmentPermitForm" (ngSubmit)="addForm()" autocomplete="off" >
+  
+  
+      <mat-accordion [multi]="true" #ComprehensiveAccordion="matAccordion" class="example-headers-align" >
+  
+        
+  
+       
+        <mat-expansion-panel [expanded]="showGeneralExpansion">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <!-- {{ "exchangeActor.management.OrganizationInfo" | translate }} -->
+              Investment-Permission
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div fxLayout.gt-md="row" fxLayout.lt-md="column"  class="manager-general-info">
+           
+            <div fxFlex.gt-md="80" fxFlex.lt-md="100">
+              
+                <mat-form-field fxFlex> 
+                  <mat-label>FormOfOwnerShip</mat-label>
+                  <mat-select multiple  formControlName="FormOfOwnerShip" id="FormOfOwnerShip" [compareWith]="compareIds" required>
+                  <mat-option *ngFor="let form of FormOfOwnerShips" [value]="form.Id" >
+                    <span>{{form.Description}}</span>
+                  </mat-option>
+                </mat-select>
+                </mat-form-field>
+               
+                <mat-form-field fxFlex>
+                  <mat-label>Tin</mat-label>
+                  <input matInput id="Tin" formControlName="Tin" required />
+                </mat-form-field>
+                <div>
+                <mat-form-field class="Reg" fxFlex>
+                  <mat-label>RegistrationNumber</mat-label>
+                  <input matInput id="RegistrationNumber" formControlName="RegistrationNumber" required />
+                </mat-form-field>
+              </div>
+                <mat-form-field fxFlex>
+                  <mat-label>TradeName</mat-label>
+                  <input matInput id="TradeName" formControlName="TradeName" required />
+                </mat-form-field>
+        
+              <mat-form-field fxFlex>
+                <mat-label>IsOpenedDocumentBeforeNow</mat-label>
+                <input matInput id="IsOpenedDocumentBeforeNow" formControlName="IsOpenedDocumentBeforeNow" required />
+              </mat-form-field>
+            
+              
+            </div>
+          </div>
+
+        </mat-expansion-panel>
+
+             <mat-expansion-panel [expanded]="showGeneralExpansion">
+             
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                <h3>This is Individual Investor Information</h3>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+              <div fxLayout.gt-md="row" fxLayout.lt-md="column" class="manager-general-info">
+           
+                <div fxFlex.gt-md="80" fxFlex.lt-md="100">
+                  <div>
+                <mat-form-field fxFlex>
+                  <mat-label>FirstName</mat-label>
+                  <input matInput id="FirstName" formControlName="FirstName" required />
+                </mat-form-field>
+                <mat-form-field fxFlex>
+                  <mat-label>FatherName</mat-label>
+                  <input matInput id="Fate" formControlName="FatherName" required />
+                </mat-form-field>
+  
+                <mat-form-field fxFlex>
+                  <mat-label>GrandName</mat-label>
+                  <input matInput id="GrandName" formControlName="GrandName" required />
+                </mat-form-field>
+  
+                <mat-form-field fxFlex>
+                  <mat-label>Gender</mat-label>
+                  <mat-select multiple  formControlName="Gender" id="Gender" [compareWith]="compareIds" required>
+                    <mat-option *ngFor="let gender of Genders" [value]="gender.Id">
+                      <span>{{ gender.Description}}</span>
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+  </div>
+                     <div>
+                <mat-form-field fxFlex>
+                  <mat-label>Nationality</mat-label>
+                  <mat-select formControlName="Nationality" id="Nationality" [compareWith]="compareIds" required>
+                    <mat-option *ngFor="let reg of nationality" [value]="reg.description">
+                      <span>{{ reg.description }}</span>
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                
+                <mat-form-field fxFlex>
+                  <mat-label>Region</mat-label>
+                  <mat-select id="Region" formControlName="Region" (selectionChange)="filterRegion($event.value)"
+                  [compareWith]="compareIds" required>
+                  <mat-option *ngFor="let reg of Regions" [value]="reg.identificationCode">
+                    <span>{{ reg.description }}</span>
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+                  <mat-form-field>
+                    <mat-label>Zone</mat-label>
+                  <mat-select id="Zone" formControlName="Zone" (selectionChange)="filterZone($event.value)"
+                    [compareWith]="compareIds" required>
+                    <mat-option *ngFor="let zone of filteredZones" [value]="zone.identificationCode">
+                      <span>{{zone.description }}</span>
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                </div>
+                <div>
+                <mat-form-field fxFlex>
+                  <mat-label>Woreda</mat-label>
+                  <mat-select id="Wereda" formControlName="Woreda" (selectionChange)="filterWereda($event.value)"
+                    [compareWith]="compareIds" required>
+                    <mat-option *ngFor="let Wereda of filteredWeredas" [value]="Wereda.identificationCode">
+                      <span>{{ Wereda.description }}</span>
+                    </mat-option>
+                  </mat-select>
+                 
+                </mat-form-field>
+                <mat-form-field fxFlex>
+                  <mat-label>Kebele</mat-label>
+                  <mat-select id="Kebele" formControlName="Kebelle"   [compareWith]="compareIds" required>
+                    <mat-option *ngFor="let k of filteredKebelles" [value]="k.identificationCode">
+                      <span>{{ k.description}}</span>
+                    </mat-option>
+                  </mat-select>
+               
+                </mat-form-field>
+      
+                <!--      House No-->
+                <mat-form-field fxFlex>
+                  <mat-label>HouseNo</mat-label>
+                  <input matInput formControlName="HouseNo" required />
+                  
+                </mat-form-field>
+                </div>
+                <div>
+                  <div>
+                  <div>
+                <mat-form-field fxFlex>
+                  <mat-label>Telephone</mat-label>
+                  <input matInput id="TeleNo" formControlName="Telephone" required />
+                </mat-form-field>
+                <mat-form-field fxFlex>
+                  <mat-label>Country</mat-label>
+                  <input matInput id="Country" formControlName="Country" />
+                </mat-form-field>
+                <div flexLayout="row wrap" fxLayoutGap="2em">
+                  <!--        specific area name Amh -->
+                  <mat-form-field fxFlex>
+                    <mat-label>OtherAddress</mat-label>
+                    <input matInput formControlName="OtherAdress" required />
+                  </mat-form-field>
+                  </div>
+                  </div>
+        </div>
+                </div>
+    <div>
+                <!--      Fax-->
+                <mat-form-field fxFlex>
+                  <mat-label>Fax</mat-label>
+                  <input matInput id="Fax" formControlName="Fax" />
+                </mat-form-field>
+      
+                <mat-form-field fxFlex>
+                  <mat-label>Email</mat-label>
+                  <input matInput id="Email" formControlName="Email" />
+    
+                </mat-form-field>
+                <!-- Pobox -->
+                <mat-form-field fxFlex>
+                  <mat-label>Pobox</mat-label>
+                  <input matInput formControlName="Pobox" />
+
+      
+                </mat-form-field>
+      
+              </div>
+      </div>
+            </div>
+            </mat-expansion-panel>
+       
+         
+                
+  
+        <mat-expansion-panel [expanded]="showAddressExpansion">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              For Business Organization
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+          <!--start of address html-->
+          <div fxLayout.gt-md="row" fxLayout.lt-md="column">
+            <div fxLayout="row wrap" fxLayoutGap="2em">
+            <!--      Region-->
+            <mat-form-field fxFlex>
+              <mat-label>BusinessOrganizationName</mat-label>
+              <input matInput id="BusinessOrganizationName" formControlName="BusinessOrganizationName" required />
+            </mat-form-field>
+         
+            <mat-form-field fxFlex>
+              <mat-label>
+                Legal Status</mat-label>
+              <mat-select multiple formControlName="LegalStatus" id="LegalStatus"  (selectionChange)="assesmentMethod($event.value)" [compareWith]="compareIds" required>
+                <mat-option *ngFor="let reg of LegalStatuses" [value]="reg.Id">
+                  <span>{{ reg.Description }}</span>
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            </div>
+            </div>
+       
+  
+          <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="0.3em">
+            <button type="submit" mat-flat-button style="background-color: rgba(186, 184, 177, 0.641)" 
+               >
+              save
+              <mat-icon>save</mat-icon>
+            </button>
+          </div>
+        
+       </mat-expansion-panel>
+      </mat-accordion>
+  
+    </form>
+    <!--end of the form-->
+  </mat-card>
+  

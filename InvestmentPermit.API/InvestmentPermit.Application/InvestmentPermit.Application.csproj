@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="6.2.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\InvestmentPermit.Domain\InvestmentPermit.Domain.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Repository\BusinessOrganizationDetails\" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\InvestmentPermit.Infrastructure\InvestmentPermit.Infrastructure.csproj" />
+	</ItemGroup>
+</Project>

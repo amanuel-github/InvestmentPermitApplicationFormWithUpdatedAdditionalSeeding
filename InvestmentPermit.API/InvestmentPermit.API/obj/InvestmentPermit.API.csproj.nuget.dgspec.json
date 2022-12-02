@@ -1,0 +1,319 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.API\\InvestmentPermit.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.API\\InvestmentPermit.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.API\\InvestmentPermit.API.csproj",
+        "projectName": "InvestmentPermit.API",
+        "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.API\\InvestmentPermit.API.csproj",
+        "packagesPath": "C:\\Users\\zelal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zelal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Application\\InvestmentPermit.Application.csproj": {
+                "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Application\\InvestmentPermit.Application.csproj"
+              },
+              "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.31, 3.1.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Application\\InvestmentPermit.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Application\\InvestmentPermit.Application.csproj",
+        "projectName": "InvestmentPermit.Application",
+        "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Application\\InvestmentPermit.Application.csproj",
+        "packagesPath": "C:\\Users\\zelal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zelal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj": {
+                "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj"
+              },
+              "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj",
+        "projectName": "InvestmentPermit.Domain",
+        "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj",
+        "packagesPath": "C:\\Users\\zelal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zelal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj",
+        "projectName": "InvestmentPermit.Infrastructure",
+        "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\InvestmentPermit.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\zelal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zelal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj": {
+                "projectPath": "C:\\Users\\zelal\\myown\\Investment-Permit-Registration-Form\\InvestmentPermit.API\\InvestmentPermit.Domain\\InvestmentPermit.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
